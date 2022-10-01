@@ -1,12 +1,12 @@
 
 
-const Login = () => {
+const Register = () => {
     return(
-        <div>Mayank Login</div>
+        <div>Mayank Register</div>
     )
 }
 
 
 
 
-export default Login
+export default Register;

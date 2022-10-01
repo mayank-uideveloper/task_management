@@ -2,3 +2,6 @@ body {
     background-color: #398c86;
     font-family: 'Poppins', sans-serif;
 }
+.logo-sec {
+    max-width: 100px;
+}

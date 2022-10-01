@@ -6,7 +6,6 @@ import CusWrapper from "./CusWrapper";
 
 const MainContainer = () => {
     const ctx = useContext(AuthContext);
-
     return <>{!ctx.isLoggedIn ? <AuthContainer /> : <CusWrapper />}</>;
 };
 
