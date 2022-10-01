@@ -1,19 +1,13 @@
 import "./App.css";
 import MainContainer from "./Container/MainContainer/MainContainer";
-import { AuthContext } from "./Context/Auth-Context";
-import { Storage } from "./Helper/Storage";
+import { AuthContextProvider } from "./Context/Auth-Context";
+
 
 function App() {
-  Storage.init();
-  
     return (
-        <AuthContext.Provider
-            value={{
-                isLoggedIn: false,
-            }}
-        >
+        <AuthContextProvider>
             <MainContainer />
-        </AuthContext.Provider>
+        </AuthContextProvider>
     );
 }
 
