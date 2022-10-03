@@ -5,3 +5,6 @@ body {
 .logo-sec {
     max-width: 100px;
 }
+.fullwidth {
+    width: 100%;
+}

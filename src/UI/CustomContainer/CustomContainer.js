@@ -8,7 +8,7 @@ const CustomContainer = (props) => {
                     props.cusCls ? props.cusCls : ""
                 }`}
             >
-                {props.title ? <div className="">{props.title}</div> : null}
+                {props.title ? <div className={styles.title}>{props.title}</div> : null}
 
                 {props.children}
             </div>

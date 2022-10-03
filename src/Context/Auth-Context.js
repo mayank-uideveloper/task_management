@@ -16,10 +16,11 @@ export const AuthContextProvider = (props) => {
     const [isAuthRegister, setIsAuthRegister] = useState(false);
 
     
-    const LoginHandler = (e) => {
-        e.preventDefault();
-        setIsLogin(true);
-        localStorage.setItem(hasLoggedIn,JSON.stringify(true));
+    const LoginHandler = (username,password) => {
+        if(username === 'admin' && password === 'password') {
+            setIsLogin(true);
+            localStorage.setItem(hasLoggedIn,JSON.stringify(true));
+        }
     }
 
     const LogoutHandler = (e) => {
